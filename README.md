@@ -11,3 +11,16 @@ I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey t
 I'll meet you over there, can't wait to get started!
 
 This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+
+## Personal website deployment on GitHub
+
+This repository now contains a static personal website with these pages:
+- `index.html` (Home)
+- `research.html`
+- `teaching.html`
+
+To publish on GitHub Pages:
+1. Push to your default branch.
+2. In GitHub, open **Settings → Pages**.
+3. Set **Build and deployment** source to **GitHub Actions**.
+4. The included workflow `.github/workflows/deploy-pages.yml` will deploy automatically.

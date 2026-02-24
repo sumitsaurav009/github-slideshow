@@ -1,13 +1,52 @@
----
-layout: presentation
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumit Saurav | Home</title>
+    <meta name="description" content="Home page of Sumit Saurav: Assistant Professor at IIM Bangalore." />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <a class="brand" href="index.html">Sumit Saurav</a>
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="teaching.html">Teaching</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+      <div class="hero-content">
+        <h1>Sumit Saurav</h1>
+        <p>I am an Assistant Professor in the Finance and Accounting Area (F&amp;A) at the Indian Institute of Management Bangalore.</p>
+        <p>My research interests are in Asset Pricing, Options, Banking, and Economics of Regulation.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://drive.google.com/file/d/19l6YqhWyXA_LMgUlRx5mkF_AWWPj53NI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+          <a class="btn" href="research.html">View Research</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="research.html">Research profile, working papers, and publications</a></li>
+        <li><a href="teaching.html">MBA and PhD teaching information</a></li>
+      </ul>
+    </main>
+
+    <footer id="contact" class="footer">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sumit.saurav@iimb.ac.in">sumit.saurav@iimb.ac.in</a></p>
+      <p>
+        Other websites:
+        <a href="http://www.linkedin.com/in/sumit-saurav-b0028643/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">LinkedIn</a>,
+        <a href="http://scholar.google.com/citations?user=W3MPRP4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>,
+        <a href="http://www.researchgate.net/profile/Sumit-Saurav-2" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+      </p>
+    </footer>
+  </body>
+</html>
