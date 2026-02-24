@@ -1,13 +1,102 @@
----
-layout: presentation
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumit Saurav</title>
+    <meta
+      name="description"
+      content="Academic website for Sumit Saurav: research, teaching, and contact information."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="nav">
+        <a class="brand" href="#home">Sumit Saurav</a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#research">Research</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+      <div class="hero-content">
+        <h1>Sumit Saurav</h1>
+        <p>
+          I am an Assistant Professor in the Finance and Accounting Area (F&amp;A)
+          at the Indian Institute of Management Bangalore.
+        </p>
+        <p>My research interests include Asset Pricing, Options, Banking, and Economics of Regulation.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://drive.google.com/file/d/19l6YqhWyXA_LMgUlRx5mkF_AWWPj53NI/view?usp=sharing" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+          <a class="btn" href="#research">View Research</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="research" class="section">
+        <h2>Research</h2>
+
+        <h3>Working Papers</h3>
+        <ul>
+          <li>Impact of Embedded Leverage on Trading Activity in Stock, Options, and Futures Markets, with Sobhesh Kumar Agarwalla (IIM-A), and Jayanth R. Varma (IIM-A).</li>
+          <li>Effect of Continuous Disclosure Requirement on Information Leakage Around Earnings Announcements, with Sobhesh Kumar Agarwalla (IIM-A), Ajay Pandey (IIM-A), and Jayanth R. Varma (IIM-A).</li>
+          <li>Natural Disasters, Interest Rate Dynamics, and Economic Activities, with Abhiman Das (IIM-A), and Tanmoy Majilla (IIM-A).</li>
+          <li>Bankruptcy codes and asymmetric cost behaviour, with Debojyoti Das, and Arun Upadhyay.</li>
+        </ul>
+
+        <h3>Published/Forthcoming Papers (Peer-Reviewed)</h3>
+        <ul>
+          <li>Lottery and bubble stocks and the cross-section of option-implied tail risks, with Sobhesh Kumar Agarwalla, and Jayanth R. Varma, <em>Journal of Futures Market</em>, 42 (2), 231-249.</li>
+          <li>Belief distortion near 52 Week High and Low: Evidence from Indian equity options market, with Sobhesh Kumar Agarwalla, and Jayanth R. Varma, <em>Journal of Futures Market</em>, 43 (11), 1531-1558.</li>
+          <li>Role of derivatives market in attenuating underreaction to left-tail risk, with Sobhesh Kumar Agarwalla, and Jayanth R. Varma, <em>Journal of Futures Market</em>, 44 (3), 484-517.</li>
+          <li>Asymmetric uncertainty around earnings announcements: Evidence from options market, with Sobhesh Kumar Agarwalla, and Jayanth R. Varma, <em>American Business Review</em>, Vol. 27, No. 2, Article 4.</li>
+          <li>Does Government Ownership Differently Impact Expected Left-Tail and Volatility Risk of Bank Stock? Evidence from Options Market, with Pranjal Srivastava, and Abinash Mishra, <em>Journal of Corporate Finance</em> (2025), 102832.</li>
+          <li>Modelling for insight: Does oil price uncertainty have directional predictability for travel and leisure firms?, with Debojyoti Das and Anupam Dutta, <em>Energy Economics</em> (Forthcoming).</li>
+        </ul>
+
+        <h3>Media Articles</h3>
+        <p>
+          Article on the effectiveness of the Repo rate as policy rate in a surplus
+          liquidity condition (published on July 31, 2020 in <em>The Hindu Business Line</em>)
+          with Pranjal Srivastava (PhD student, IIM-A).
+        </p>
+
+        <h3>Book Chapters</h3>
+        <p>
+          Saurav, S. (2020). Review of Corporate Governance in Emerging Economies from the Perspective
+          of Principal-Principal Conflict. <em>The Financial Landscape of Emerging Economies</em>, 111-121.
+        </p>
+      </section>
+
+      <section id="teaching" class="section alt">
+        <h2>Teaching</h2>
+
+        <h3>MBA</h3>
+        <ul>
+          <li>Corporate Finance (PGP Core Course)</li>
+          <li>Investment Management (PGP Term III Elective)</li>
+        </ul>
+
+        <h3>PhD</h3>
+        <ul>
+          <li>Indian Financial Markets and Institutions</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sumit.saurav@iimb.ac.in">sumit.saurav@iimb.ac.in</a></p>
+      <p>
+        Other websites:
+        <a href="http://www.linkedin.com/in/sumit-saurav-b0028643/?originalSubdomain=in" target="_blank" rel="noopener noreferrer">LinkedIn</a>,
+        <a href="http://scholar.google.com/citations?user=W3MPRP4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>,
+        <a href="http://www.researchgate.net/profile/Sumit-Saurav-2" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+      </p>
+    </footer>
+  </body>
+</html>
