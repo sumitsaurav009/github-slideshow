@@ -10,8 +10,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
   background: white;
@@ -53,6 +60,11 @@ header.header {
 .nav-links a.active {
   color: white;
   border-bottom: 2px solid white;
+}
+
+main {
+  flex: 1 0 auto;
+  display: block;
 }
 
 .hero-content {
@@ -109,21 +121,6 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
 .section {
   max-width: 1000px;
   margin: 2rem auto;
@@ -141,6 +138,7 @@ main {
   color: white;
   border-radius: 0;
   box-shadow: none;
+  flex-shrink: 0;
 }
 
 .footer-content {
@@ -165,7 +163,6 @@ main {
   color: #9ec5ff;
   text-decoration: none;
 }
-
 
 a {
   color: var(--accent);
