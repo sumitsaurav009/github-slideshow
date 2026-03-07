@@ -43,6 +43,19 @@ body {
   margin: 2rem auto;
   padding: 1.5rem;
 }
+
+.brand {
+  color: white;
+}
+
+.nav-links a {
+  color: #dbe8ff;
+}
+
+.nav-links a.active {
+  color: white;
+  border-bottom: 2px solid white;
+}
 .brand { color: #fff; font-weight: 700; text-decoration: none; }
 
 .nav-links { display: flex; gap: 1rem; flex-wrap: wrap; }
