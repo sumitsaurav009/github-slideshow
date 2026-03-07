@@ -93,6 +93,21 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
+.profile{
+display:flex;
+gap:2rem;
+align-items:center;
+}
+
+.profile-photo img{
+width:170px;
+border-radius:8px;
+}
+
+.profile-text{
+max-width:700px;
+}
+
 .section,
 .footer {
   max-width: 1000px;
