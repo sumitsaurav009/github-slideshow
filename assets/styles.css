@@ -106,6 +106,10 @@ align-items:flex-start;
   border-radius: 8px;
 }
 
+.profile-photo {
+  margin-top: 20px;
+}
+
 .profile-text{
 max-width:700px;
 }
