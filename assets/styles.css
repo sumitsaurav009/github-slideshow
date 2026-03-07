@@ -109,6 +109,21 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .section {
   max-width: 1000px;
   margin: 2rem auto;
@@ -119,10 +134,13 @@ h1, h2, h3 {
 }
 
 .footer {
-  margin-top: 3rem;
+  width: 100%;
+  margin-top: auto;
   padding: 2rem 1.5rem;
   background: #0d1b2a;
   color: white;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .footer-content {
@@ -148,6 +166,7 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
+
 a {
   color: var(--accent);
 }
@@ -166,16 +185,4 @@ a {
   .profile-photo {
     margin-top: 0;
   }
-  html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
 }
